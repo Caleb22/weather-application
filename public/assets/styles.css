@@ -1,0 +1,35 @@
+
+body {
+    background-color: #F0FFFF;
+}
+h1 { text-align: center;
+  border: 3px solid green;
+     }
+
+.dataOne{
+     margin: auto;
+     width: 30%;
+     border: 30px solid #F0FFFF;
+     padding: 10px;
+}
+
+.dataTwo{
+  border: 12px solid #F0FFFF;
+  float: left;
+  width: 20%;
+}
+.dataThree{
+  border: 12px solid #F0FFFF;
+  float: left;
+  width: 24%;
+}
+.dataFour{
+  border: 12px solid #F0FFFF;
+  float: left;
+  width: 24%;
+}
+.dataFive{
+  border: 12px solid #F0FFFF;
+  float: left;
+  width: 24%;
+}
