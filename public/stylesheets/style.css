@@ -1,0 +1,34 @@
+body {
+  background: url(/image/images.jpg);
+  background-size: 1400px 800px;
+  background-repeat: no-repeat;
+}
+
+
+h1 { font-size: 400%;
+     }
+
+.dataOne{
+
+}
+
+.dataTwo{
+  border: 4px solid #B0C4DE;
+  float: left;
+  width: 20%;
+}
+.dataThree{
+  border: 4px solid #B0C4DE;
+  float: left;
+  width: 24%;
+}
+.dataFour{
+  border: 4px solid #B0C4DE;
+  float: left;
+  width: 24%;
+}
+.dataFive{
+  border: 4px solid #B0C4DE;
+  float: left;
+  width: 24%;
+}
