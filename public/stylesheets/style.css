@@ -1,34 +1,44 @@
-body {
-  background: url(/image/images.jpg);
-  background-size: 1400px 800px;
-  background-repeat: no-repeat;
+
+html {
+  background: url(/image/imageArt.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
 h1 { font-size: 400%;
+  font-weight: bold;
+  color: snow;
      }
 
-.dataOne{
+.dataOne{font-size: 100%;
+  font-weight: bold;
+  color: black;
 
 }
 
 .dataTwo{
-  border: 4px solid #B0C4DE;
+  border: 4px solid #161414;
+  color: snow;
   float: left;
   width: 20%;
+  background-color: black;
 }
 .dataThree{
-  border: 4px solid #B0C4DE;
+  border: 4px solid #161414;
   float: left;
   width: 24%;
 }
 .dataFour{
-  border: 4px solid #B0C4DE;
+  border: 4px solid #161414;
   float: left;
   width: 24%;
+  background-color: blue;
 }
 .dataFive{
-  border: 4px solid #B0C4DE;
+  border: 4px solid #161414;
   float: left;
   width: 24%;
 }
