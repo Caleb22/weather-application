@@ -24,7 +24,7 @@ app.use(express.static('./public'));
            var data = JSON.parse(info);
           //data.list[0].main;
            var datas = {temp: data.list[0].main.temp, humidity: data.list[0].main.humidity,
-              dt_txt: data.list[0].dt_txt, pressure: data.list[0].main.pressure,
+             main: data.list[0].weather[0].main, dt_txt: data.list[0].dt_txt, pressure: data.list[0].main.pressure,
               temp2: data.list[2].main.temp, humidity2: data.list[2].main.humidity,
               dt_txt2: data.list[2].dt_txt, pressure2: data.list[2].main.pressure,
               temp3: data.list[10].main.temp, humidity3: data.list[10].main.humidity,
@@ -33,7 +33,8 @@ app.use(express.static('./public'));
               dt_txt4: data.list[19].dt_txt, pressure4: data.list[19].main.pressure,
               temp5: data.list[28].main.temp, humidity5: data.list[28].main.humidity,
               dt_txt5: data.list[28].dt_txt, pressure5: data.list[28].main.pressure};
-              //console.log(datas);
+
+              //console.log( Math.round(datas.temp));
           res.render('index', {datas: datas});
            });
         }catch(error){
