@@ -27,7 +27,15 @@
               <h2> &deg;C</h2>
             </div>
           <div class="col-sm-6">
-              <img src="image/rain.png" alt="rain" height="150" width="200">
+            <% if(datas.main == "Rain"){ %>
+              <img src="image/rain.ico" alt="rain" height="150" width="200">
+            <% } else if(datas.main == "Clouds"){ %>
+          <img src="image/Clouds.icon" alt="rain" height="150" width="200">
+            <% }else if(datas.main == "Clear"){ %>
+          <img src="image/Clear.icon" alt="rain" height="150" width="200">
+            <% }else{ %>
+              <h1></h1>
+           <% } %>
             </div>
    </div>
        <div class="row">
@@ -38,7 +46,7 @@
             "Friday","Saturday")
           document.write( weekday[d.getDay()] + " Weather")
         </script> </h5>
-       <p> Main: <%= datas.main %> </p>
+       <p> description: <%= datas.description %> </p>
        <p>Pressure: <%= datas.pressure %> </p>
        <p> Humidity: <%= datas.humidity %> </p>
         </div>
