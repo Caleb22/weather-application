@@ -1,13 +1,14 @@
 # weather-application
 
 Weather Forecast App
-The Weather Forecast app is a single page app that utilizes the OpenWeatherMap 
+The Weather Forecast app is a single page app that utilizes the OpenWeatherMap
 API from http://openweathermap.org/api to extract weather data and display a 5 day forecast.
 
 Languages used
 
 JavaScript
 HTML5/CSS3
+Bootstrap v4
 
 Frameworks
 Node.js
