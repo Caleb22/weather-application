@@ -1,5 +1,4 @@
 var http = require('http');
-var fs = require('fs');
 var express = require('express');
 var app = express();
 
@@ -9,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 
   http.get('http://api.openweathermap.org/data/2.5/forecast?q=London,GB&appid=c4bce5bf5e664247e5751880f1b9c19d&units=metric', function(response){
-    //console.log(response.statusCode);
+
     var info = "";
     response.on("data",function(chunk){
      info += chunk;
@@ -17,7 +16,7 @@ app.use(express.static('./public'));
 
     response.on("end",function(){
       if(response.statusCode === 200){
-        //console.log(typeof(data));
+      //  console.log(typeof(data));
         try{
           //parsing the string into JSON object
          app.get('/', function(req,res){
